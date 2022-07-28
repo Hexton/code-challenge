@@ -1,10 +1,15 @@
-// Write a function that takes two numbers (a and b) as argument
-// Sum a and b
-// Return the result
-function myFunction(a, b) {
-  return a + b;
+// Write a function that takes a number (a) as argument
+// If a is a whole number (has no decimal place), return true
+// Otherwise, return false
+function myFunction(a) {
+  return Math.floor(a) === a;
 }
 
-console.log(myFunction(1, 2));
-console.log(myFunction(1, 10));
-console.log(myFunction(99, 1));
+function myFunction(a) {
+  return a - Math.floor(a) === 0;
+}
+
+console.log(myFunction(4)); //true
+console.log(myFunction(1.123)); //false
+console.log(myFunction(1048)); ///true
+console.log(myFunction(10.48)); //false
