@@ -3,7 +3,7 @@
 // Otherwise, multiply both numbers
 // Return the resulting value
 function myFunction(a, b) {
-  return;
+  return a < b ? a / b : a * b;
 }
 
 console.log(myFunction(10, 100)); //0.1
