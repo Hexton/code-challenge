@@ -1,10 +1,12 @@
-// Write a function that takes two numbers (a and b) as argument
-// Sum a and b
-// Return the result
-function myFunction(a, b) {
-  return a + b;
+// Write a function that takes two numbers, say x and y, as arguments
+// Check if x is divisible by y
+// If yes, return x
+// If not, return the next higher natural number that is divisible by y
+function myFunction(x, y) {
+  return x % y === 0 ? x : myFunction(x + 1, y);
 }
 
-console.log(myFunction(1, 2));
-console.log(myFunction(1, 10));
-console.log(myFunction(99, 1));
+console.log(myFunction(1, 23)); //23
+console.log(myFunction(23, 23)); //23
+console.log(myFunction(7, 3)); //9
+console.log(myFunction(-5, 7)); //0
